@@ -1,9 +1,12 @@
-<div class="container" *ngFor="let article of headlines">
-  <h2>{{ article.title }}</h2>
-  <img src="{{ article.urlToImage }}" alt="Article Image" />
-  <p>Author: {{ article.author }}</p>
-  <p>Published At: {{ article.publishedAt }}</p>
-  <p>Description: {{ article.description }}</p>
-  <a href="{{ article.url }}" target="_blank">Read More</a>
-  <hr />
+<div class="par">
+  <div class="container" *ngFor="let article of headlines">
+    <h2>{{ article.title }}</h2>
+    <img src="{{ article.urlToImage }}" alt="Article Image" />
+    <p><strong>Author: </strong>{{ article.author }}</p>
+    <p><strong>Source: </strong>{{ article.source.name }}</p>
+    <p><strong>Published At: </strong>{{ article.publishedAt }}</p>
+    <p><strong>Description: </strong>{{ article.description }}</p>
+    <a href="{{ article.url }}" target="_blank">Read More</a>
+    <hr />
+  </div>
 </div>

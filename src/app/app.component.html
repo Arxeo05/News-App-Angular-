@@ -1,6 +1,16 @@
-<h1>News App</h1>
+<div class="nav">
+  <h3>IspohOrts News!</h3>
+
+  <select name="sports" id="sports" (change)="updateSelectedValue($event)">
+    <option value="Sports">Sports</option>
+    <option value="NBA">NBA</option>
+    <option value="NHL">NHL</option>
+    <option value="NFL">NFL</option>
+    <option value="Boxing">Boxing</option>
+  </select>
+</div>
 <main class="content1">
   <div class="background">
-    <app-newspage></app-newspage>
+    <app-newspage [selectedValue]="parentSelectedValue"></app-newspage>
   </div>
 </main>

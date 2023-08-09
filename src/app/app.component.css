@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; /* To make sure the nav is above other content */
+}
+
+.nav h3 {
+  font-size: 24px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+#sports {
+  padding: 8px;
+  border: none;
+  margin-right: 40px;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#sports option {
+  background-color: #333;
+  color: white;
+}
+
+#sports:focus {
+  outline: none;
+}

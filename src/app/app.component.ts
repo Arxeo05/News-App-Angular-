@@ -7,4 +7,12 @@ import { NewspageComponent } from './components/newspage/newspage.component';
 })
 export class AppComponent {
   title = 'newsapi';
+  parentSelectedValue: string = 'Sports';
+
+  updateSelectedValue(event: any) {
+    const newValue = event.target.value;
+    if (newValue !== null) {
+      this.parentSelectedValue = newValue;
+    }
+  }
 }

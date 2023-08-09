@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
 export class BackendService {
   constructor(private http: HttpClient) {}
 
-  getNews(): Observable<any> {
+  getNews(query: string): Observable<any> {
     return this.http.get(
-      'https://newsapi.org/v2/top-headlines?country=us&apiKey=33a4b99fe079413bbb60e9df50e4f11b'
+      `https://newsapi.org/v2/everything?q=${query}&apiKey=33a4b99fe079413bbb60e9df50e4f11b`
     );
   }
 }
